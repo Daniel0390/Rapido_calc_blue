@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL=StyleSheet HREF="estilos.css" TYPE="text/css" MEDIA=screen>
+    <title>Document</title>
+</head>
+      
+    
+     
+<body>
+                   <!-- contenedor principal -->
+
+      <div class="contenedor_principal" id="contenedor_principal">
+
+                  <!-- botones primarios -->
+
+               <div class="cont_botones_principales">
+
+                      <button class="btn_TRADIC" id="btn_TRADIC">TRADIC</button>
+                      <button class="btn_P-92"   id="btn_P-92">P-92</button>
+                      <button class="btn_P-65"   id="btn_P-65">P-65</button>
+                      <button class="btn_V_ALUM" id="btn_V_ALUM">V.ALUM</button>
+                     
+               </div>
+
+                  <!-- contenedor de los input primarios -->
+
+               <div class="contenedor_campos_primarios">
+                  <input type="number" value="" id="valor_de_ancho">
+                  <h1 class="x">x</h1> 
+                  <input type="number" value=""    id="valor_de_alto">
+               </div>
+
+               <div class="cont_botones_secundarios">
+
+                  <button class="btn_secundarios" style="background-color: rgb(165, 161, 161);" id="boton_ajustes">AJUSTES</button>
+                  <button class="btn_secundarios" style="background-color: rgb(97, 156, 97);"   id="boton_calculo">CALCULO</button>
+                  <button class="btn_secundarios" style="background-color: rgb(237, 189, 127);" id="boton_guardar">GUARDAR</button>
+                  <button class="btn_secundarios" style="background-color: rgb(184, 77, 77);">BORRAR</button>
+                  
+               </div>
+
+
+                     <!-- contenedor pequeño -->
+
+                     <div class="contenedor_pequeño"  id="contenedor_pequeño" >
+
+                        <div class="contenedor_numero-orden">1</div> 
+
+                        <label style="color:rgb(13, 79, 3) ;">ALFERSAL :&#160&#160 &#160                          <span id="campo_resultado_alfersal"></span> </label> 
+                        <label style="color: rgb(225, 52, 167);">JAMBA    :&#160&#160 &#160&#160 &#160&#160 &#160 <span id="campo_resultado_jamba"></span></label>
+                        <label style="color: rgb(83, 83, 8);">RIELES   :&#160&#160 &#160&#160 &#160&#160 &#160    <span id="campo_resultado_rieles"></span></label>
+                        <label style="color:rebeccapurple ;">LATERALES:&#160&#160                                 <span id="campo_resultado_laterales"></span></label>
+                        <label style="color: blue;">CRISTALES:&#160&#160 &#160                                    <span id="resultado_cristales_ancho"></span>x<span id="resultado_cristales_alto"></span></label>
+                        
+                     </div>
+
+               
+
+
+      </div>
+            
+                 
+
+
+
+
+                            <!-- contenedor de Ajustes -->
+
+      <div class="contenedor_de_ajustes" id="contenedor_de_ajustes">
+
+
+                 <button class="boton_atras_ajustes" id="boton_atras_ajustes">ATRAS</button>
+
+                 <H3 style="color: rgb(7, 111, 7);"   > PRECIO DE VENTA</H3>  <input type="number"class="campos_de_ajustes" id="campo_precio">
+                 <H3 style="color: rgb(129, 6, 123);" >NOMBRE DEL CIENTE</H3> <input type="tex"  style="width: 250px;"      id="entrar_nombre_ciente">
+         <hr>
+
+                         <h3>RESTO DE ALFERSAL</h3>    <input type="number" value=".38" class="campos_de_ajustes"   id="resto_de_alfersar">
+                         <h3>DIVISOR DE ALFERSAL</h3>  <input type="number" value="2"   class="campos_de_ajustes"   id="el_divisor_alfersal">
+                         <h3>RESTO DE JAMBA</h3>       <input type="number" value="1"   class="campos_de_ajustes"   id="resto_de_jamba">
+                         <h3>RESTO DE RIELES</h3>      <input type="number" value="1"   class="campos_de_ajustes"   id="resto_rieles">
+                         <h3>RESTO DE LATERALES</h3>   <input type="number" value=".60" class="campos_de_ajustes"   id="resto_laterales">
+                         <H3>RESTO DE ANCHO VIDRIO</H3><input type="number" value="1.87"class="campos_de_ajustes"   id="resto_de_vidrio_ancho">
+                         <H3>RESTO DE ALTO VIDRIO</H3><input type="number" value="3"    class="campos_de_ajustes"   id="resto_de_vidrio_alto">
+                         
+
+      </div>
+
+
+           
+
+
+
+
+
+               <!-- contenedor de resultados de medias y cotizacion -->
+ 
+   <div class="contenedor_medida_y_cotizacion" id="contenedor_medida_y_cotizacion">
+
+      <div class="cont_botones_principales">
+
+         <button class="btn_TRADIC">TRADIC</button>
+         <button class="btn_P-92">P-92</button>
+         <button class="btn_P-65">P-65</button>
+         <button class="btn_V_ALUM">V.ALUM</button>
+        
+  </div>
+      <div class="cont_para_nombre_cliente" id="cont_para_nombre_cliente"> 
+           <input type="text"   readonly class="salida_nombre_cliente" id="salida_nombre_cliente">
+
+         <button class="boton_atras_cotzacion">ATRAS</button>
+
+      </div>
+       
+         
+      
+       <div class="cont_vacija" id="cont_vacija">
+
+               <div class="contenedor_numero-orden">1</div>
+
+                   <label style="color:rgb(5, 25, 3) ;">ALFERSAL :&#160&#160 &#160                         <span id="campo_alfersal_vacija"></span> </label> 
+                   <label style="color: rgb(109, 29, 83);">JAMBA    :&#160&#160 &#160&#160 &#160&#160 &#160<span id="campo_jamba_vacija"></span></label>
+                   <label style="color: rgb(58, 58, 11);">RIELES   :&#160&#160 &#160&#160 &#160&#160 &#160   <span id="campo_rieles_vacija"></span></label>
+                   <label style="color:rgb(43, 25, 61) ;">LATERALES:&#160&#160                                <span id="campo_laterales_vacija"></span></label>
+                   <label style="color: rgb(32, 32, 133);">CRISTALES: <span id="resultado_cristales"></span></label>
+            
+            </div>  
+
+      <br> 
+
+    
+     
+   
+
+
+
+   
+   
+</div> 
+
+   
+   
+   
+
+
+   
+   
+
+
+
+
+
+
+    <script src="codigo.js"></script>
+</body>
+</html>
