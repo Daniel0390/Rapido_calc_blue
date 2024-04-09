@@ -78,6 +78,25 @@ input{
 
   }
 
+  .contenedor_conteo{
+    border:  black solid 1px;
+    background-color: aliceblue;
+    width: 340px;
+    position: absolute;
+    top: 160px;
+    visibility: hidden;
+
+  }
+
+  .cont_conteo_hijo{
+    display: flex;
+    margin: 5px;
+    display: inline-block;
+    font-size: 25px;
+  }
+
+
+
   .contenedor_pequeño > label{
     margin: 0px;
     display:inline-block;
